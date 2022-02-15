@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="javaScript/loginJs.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  <link rel="stylesheet" type="text/css" href="CSS/login_page.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet">
+    <script type="text/javascript" src="javaScript/loginJs.js"></script>
+</head>
+
+<body>
+  
+  <div id="main-body">
+
+    <div id="header" style="background-color:darkseagreen;">
+      <a href="index.html"><img src="icons/logo.jfif" height="60px" width="60px"
+        style="margin-left: 20px; height: 60px; width: 60px; border-radius: 10px; margin-top: -15px"></a>
+      <table cellpadding="40" id="head-table">
+        <tr>
+          <th><a class="Button" href="index.html" style="margin-right: 0px;">Home</a></th>
+          <th><a class="Button" href="about_page.html" style="margin-right: 0px;">About</a></th>
+          <th><a class="Button" href="service_page.html" style="margin-right: 0px;">Service</a></th>
+          <th><a class="Button" href="contact_page.html" style="margin-right: 0px;">Contact</a></th>
+          <th>
+            <a class="Button" href="#" style="margin-right: 0px;"><img height="30px"
+                src="icons/profile.png" />&emsp;&emsp; Log
+              In</a>
+          </th>
+        </tr>
+      </table>
+    </div>
+    <div id="login-body">
+      <form name="form">
+        <div>
+          <table>
+            <tr>
+              <td>
+                <h1>Sign In</h1><br>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input name="email" class="input" type="email" placeholder="Email" required id="email" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input  type="password" placeholder="Password" required class="input" name="password"
+                  id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" name="psw" />
+              </td>
+            </tr>
+          
+            <tr>
+              <td><br><input id="submit" type="submit" value="Sign In" onclick="ValidateEmail(document.form.email)"></td>
+            </tr>
+          </table>
+       
+        </div>
+      </form>
+      <div id="message">
+        <h6>Password must contain the following:</h6>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      </div>
+    </div>
+    <div id="login-image">
+      <img src="Images/joey-banks-YApiWyp0lqo-unsplash.jpg" height="660px" width="100%" style="margin-top: 10px;" />
+    </div>
+    <div id="nakli"></div>
+  </div>
+  <div id="footer">
+    <div id="cl1">
+      <span id="car-champ">CAR CHAMPS.</span><br>
+      <span>Custom Car Makers</span>
+    </div>
+    <div id="cl2">
+      <p>
+        500 Terry Francois Street<br />
+
+        San Francisco, CA 94158
+      </p>
+      <a href="https://www.facebook.com/vaibhav.jain.50999"><img class="social-image"
+          src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01/0fdef751204647a3bbd7eaa2827ed4f9.webp" /></a>
+      <a href="#"><img class="social-image"
+          src="https://static.wixstatic.com/media/8f6f59264a094af0b46e9f6c77dff83e.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01/8f6f59264a094af0b46e9f6c77dff83e.webp" /></a>
+      <a href="https://www.instagram.com/iam_sumitsoni__/"><img class="social-image"
+          src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01/01c3aff52f2a4dffa526d7a9843d46ea.webp" /></a>
+    </div>
+    <div id="cl3">
+      <p>
+        Tel: 123-456-7890<br />
+
+        Opening Hours: 9am - 7pm
+      </p>
+    </div>
+    <div id="lastline">
+      <p>
+        <br />© 2023 by Car Champs. Made with ❤ by Sumit, Vivek& Vaibhav
+      </p>
+      <br />
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="javaScript/loginJs.js"></script>
+</body>
+
+</html>

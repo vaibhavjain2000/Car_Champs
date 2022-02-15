@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  <link rel="stylesheet" type="text/css" href="CSS/contact_page.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div id="main-body">
+    <div id="header" style="background-color: darkseagreen;">
+      <a href="index.html"><img src="icons/logo.jfif" height="60px" width="60px" style="
+            margin-left: 20px;
+            height: 60px;
+            width: 60px;
+            border-radius: 10px;
+            margin-top: -15px;
+          " /></a>
+      <table cellpadding="40" id="head-table">
+        <tr>
+          <th><a href="index.html" style="margin-right: 0px;">Home</a></th>
+          <th><a href="about_page.html" style="margin-right: 0px;">About</a></th>
+          <th><a href="service_page.html" style="margin-right: 0px;">Service</a></th>
+          <th><a href="contact_page.html" style="margin-right: 0px;">Contact</a></th>
+          <th>
+            <a href="login_page.html" style="margin-right: 0px;"><img height="30px" src="icons/profile.png" />&emsp;&emsp; Log
+              In</a>
+          </th>
+        </tr>
+      </table>
+    </div>
+    <div id="contactus">
+      <span>CONTACT <span id="us">US</span></span>
+    </div>
+    <div id="contact-body" >
+      <form name="form">
+      <table>
+        <tr>
+          <td><input type="text" placeholder="Name" required/></td>
+        </tr>
+        <tr>
+          <td><input type="email" placeholder="Email" name="email" required/></td>
+        </tr>
+        <tr>
+          <td><input type="Text" placeholder="Phone" id="phonenumber"/></td>
+        </tr>
+        <tr>
+          <td><select>
+            <option>Service</option>
+            <option>Washing</option>
+            <option>Painting</option>
+            <option>Repair</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td><textarea placeholder="Type your message here..." required></textarea></td>
+        </tr>
+        <tr>
+          <td><input type="submit" onclick="ValidateEmail(document.form.email)" value="GET YOUR QUOTE!" /></td>
+        </tr>
+        <tr>
+          <td><p>All fields are required.😊</p></td>
+        </tr>
+      </table>
+      </form>
+    </div>
+
+    <div id="box">
+      <div id="address">
+        <p>500 Terry Francois Street</p>
+        <p>San Francisco, CA 94158</p>
+      </div>
+      <hr />
+      <div id="phone">
+        <p>info@mysite.com</p>
+        <p>Tel: 1234-456-7890</p>
+        <p>Fax: 123-456-7899</p>
+      </div>
+    </div>
+    <div id="nakli"></div>
+    <div id="footer">
+      <div id="cl1">
+        <span id="car-champ">CAR CHAMPS.</span><br>
+        <span>Custom Car Makers</span>
+      </div>
+      <div id="cl2">
+        <p>
+          500 Terry Francois Street<br />
+
+          San Francisco, CA 94158
+        </p>
+        <a href="https://www.facebook.com/vaibhav.jain.50999"><img class="social-image"
+            src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01/0fdef751204647a3bbd7eaa2827ed4f9.webp" /></a>
+        <a href="#"><img class="social-image"
+            src="https://static.wixstatic.com/media/8f6f59264a094af0b46e9f6c77dff83e.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01/8f6f59264a094af0b46e9f6c77dff83e.webp" /></a>
+        <a href="https://www.instagram.com/iam_sumitsoni__/"><img class="social-image"
+            src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01/01c3aff52f2a4dffa526d7a9843d46ea.webp" /></a>
+      </div>
+      <div id="cl3">
+        <p>
+          Tel: 123-456-7890<br />
+
+          Opening Hours: 9am - 7pm
+        </p>
+      </div>
+      <div id="lastline">
+        <p>
+          <br />© 2023 by Car Champs. Made with ❤ by Sumit, Vivek& Vaibhav
+        </p>
+        <br />
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="javaScript/contactJs.js"></script>
+</body>
+
+</html>
